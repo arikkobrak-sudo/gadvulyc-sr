@@ -37,4 +37,4 @@ jobs:
       - name: Validate HTML (W3C Nu Html Checker)
         run: |
           npm install --no-save vnu-jar@26.11.4
-          java -jar "$(node -p "require('vnu-jar')")" --errors-only *.html
+          java -jar node_modules/vnu-jar/build/dist/vnu.jar --errors-only *.html
