@@ -31,7 +31,8 @@ jobs:
           git diff --exit-code css/styles.css
 
       - name: Validate data.json
-        run: node -e "const d=require('./data/data.json'); for (const k of ['categories','masters','services','urgency','zones','reviews']) if (!Array.isArray(d[k]) || !d[k].length) throw new Error('data.json: ' + k)"
+        run: |
+          node -e "const d=require('./data/data.json'); for (const k of ['categories','masters','services','urgency','zones','reviews']) if (!Array.isArray(d[k]) || !d[k].length) throw new Error('data.json: ' + k)"
 
       - name: Validate HTML (W3C Nu Html Checker)
         run: |
