@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: Install dependencies
+        run: npm ci
+
+      # styles.css is committed for Vercel's no-build deploy, so it must match input.css
+      - name: Build CSS and check it is committed
+        run: |
+          npm run build:css
+          git diff --exit-code css/styles.css
+
+      - name: Validate data.json
+        run: node -e "const d=require('./data/data.json'); for (const k of ['categories','masters','services','urgency','zones','reviews']) if (!Array.isArray(d[k]) || !d[k].length) throw new Error('data.json: ' + k)"
+
+      - name: Validate HTML (W3C Nu Html Checker)
+        run: |
+          npm install --no-save vnu-jar@26.11.4
+          java -jar "$(node -p "require('vnu-jar')")" --errors-only *.html

@@ -47,3 +47,13 @@ npm start           # локальний сервер (npx serve .)
 ## Публікація
 
 Статичний сайт на Vercel без кроку збірки: Framework Preset = Other, Output Directory = корінь репозиторію.
+
+Кожен push у `main` автоматично розгортається на Vercel: https://gadvulyc-sr.vercel.app
+
+## CI
+
+GitHub Actions (`.github/workflows/ci.yml`) на кожен push і pull request:
+
+- перезбирає CSS і перевіряє, що закомічений `css/styles.css` актуальний;
+- перевіряє структуру `data/data.json`;
+- валідує всі HTML-сторінки W3C Nu Html Checker.
