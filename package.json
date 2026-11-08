@@ -1,0 +1,15 @@
+{
+  "name": "gadvulyc-sr",
+  "version": "1.0.0",
+  "description": "ГадВулик: навчальний MVP каталогу майстрів Гадяча (HTML5, Tailwind CSS, JavaScript)",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i css/input.css -o css/styles.css --minify",
+    "watch:css": "tailwindcss -i css/input.css -o css/styles.css --watch",
+    "start": "npx serve ."
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.19"
+  },
+  "license": "MIT"
+}

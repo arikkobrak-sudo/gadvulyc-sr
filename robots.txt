@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gadvulyc-sr.vercel.app/sitemap.xml

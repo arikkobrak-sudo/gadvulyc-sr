@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "note": "Демо-дані навчального MVP. Імена, ціни та відгуки вигадані.",
+    "currency": "грн"
+  },
+  "categories": [
+    { "id": "handyman", "name": "Майстер на годину", "icon": "🛠️", "description": "Дрібний ремонт у домі" },
+    { "id": "electrician", "name": "Електрик", "icon": "⚡", "description": "Проводка, розетки, щитки" },
+    { "id": "plumber", "name": "Сантехнік", "icon": "🚰", "description": "Труби, змішувачі, радіатори" },
+    { "id": "apartmentRepair", "name": "Ремонт квартир", "icon": "🏠", "description": "Стяжка, шпалери, оздоблення" },
+    { "id": "tiler", "name": "Плиточник", "icon": "🧱", "description": "Плитка у ванній і на кухні" },
+    { "id": "painter", "name": "Маляр / Штукатур", "icon": "🎨", "description": "Фарбування та штукатурка" },
+    { "id": "carpenter", "name": "Столяр / Тесля", "icon": "🪚", "description": "Меблі, двері, дерев'яні роботи" },
+    { "id": "cleaning", "name": "Клінінг", "icon": "🧹", "description": "Прибирання після ремонту" },
+    { "id": "appliances", "name": "Ремонт побутової техніки", "icon": "🔌", "description": "Пральні машини, холодильники" },
+    { "id": "movers", "name": "Вантажники", "icon": "🚚", "description": "Переїзди та підняття вантажів" }
+  ],
+  "masters": [
+    {
+      "id": 1, "name": "Олег Ковальчук", "categoryId": "electrician", "city": "Гадяч",
+      "rating": 4.9, "reviews": 48, "experience": 12, "priceFrom": 120, "verified": true,
+      "bio": "Електромонтаж квартир і будинків, заміна проводки, збирання щитків. Видаю акт виконаних робіт.",
+      "skills": ["Проводка", "Електрощити", "Розетки та вимикачі"]
+    },
+    {
+      "id": 2, "name": "Андрій Мельник", "categoryId": "plumber", "city": "Гадяч",
+      "rating": 4.8, "reviews": 36, "experience": 9, "priceFrom": 350, "verified": true,
+      "bio": "Сантехніка під ключ: від заміни змішувача до розводки труб у новій квартирі.",
+      "skills": ["Змішувачі", "Радіатори", "Розводка труб"]
+    },
+    {
+      "id": 3, "name": "Ірина Шевченко", "categoryId": "painter", "city": "Гадяч",
+      "rating": 4.7, "reviews": 29, "experience": 7, "priceFrom": 90, "verified": true,
+      "bio": "Фарбування стін і стель, декоративна штукатурка. Працюю акуратно, прибираю після себе.",
+      "skills": ["Фарбування", "Штукатурка", "Шпаклівка"]
+    },
+    {
+      "id": 4, "name": "Василь Бойко", "categoryId": "tiler", "city": "Гадяч",
+      "rating": 4.9, "reviews": 41, "experience": 15, "priceFrom": 380, "verified": true,
+      "bio": "Укладаю плитку у ванних кімнатах, на кухнях і терасах. Рівні шви, гарантія на роботу.",
+      "skills": ["Плитка", "Керамограніт", "Затирка швів"]
+    },
+    {
+      "id": 5, "name": "Тарас Гриценко", "categoryId": "carpenter", "city": "Рудиків",
+      "rating": 4.6, "reviews": 18, "experience": 10, "priceFrom": 900, "verified": false,
+      "bio": "Збираю меблі, встановлюю міжкімнатні двері, роблю прості столярні вироби на замовлення.",
+      "skills": ["Збирання меблів", "Двері", "Столярні вироби"]
+    },
+    {
+      "id": 6, "name": "Наталія Лисенко", "categoryId": "cleaning", "city": "Гадяч",
+      "rating": 4.8, "reviews": 52, "experience": 6, "priceFrom": 45, "verified": true,
+      "bio": "Клінінг квартир і будинків, прибирання після ремонту, миття вікон. Свій інвентар і засоби.",
+      "skills": ["Генеральне прибирання", "Після ремонту", "Миття вікон"]
+    },
+    {
+      "id": 7, "name": "Максим Павленко", "categoryId": "handyman", "city": "Гадяч",
+      "rating": 4.5, "reviews": 23, "experience": 5, "priceFrom": 300, "verified": false,
+      "bio": "Дрібний ремонт по дому: повісити полицю, поправити двері, замінити замок, зібрати карниз.",
+      "skills": ["Дрібний ремонт", "Полиці й карнизи", "Замки"]
+    },
+    {
+      "id": 8, "name": "Сергій Мороз", "categoryId": "appliances", "city": "Гадяч",
+      "rating": 4.7, "reviews": 31, "experience": 11, "priceFrom": 650, "verified": true,
+      "bio": "Ремонт пральних машин, холодильників і бойлерів вдома у клієнта. Діагностика безкоштовна при ремонті.",
+      "skills": ["Пральні машини", "Холодильники", "Бойлери"]
+    },
+    {
+      "id": 9, "name": "Роман Кравченко", "categoryId": "apartmentRepair", "city": "Гадяч",
+      "rating": 4.8, "reviews": 27, "experience": 13, "priceFrom": 110, "verified": true,
+      "bio": "Ремонт квартир під ключ невеликою бригадою: стяжка, шпалери, підлога, оздоблення.",
+      "skills": ["Стяжка", "Шпалери", "Оздоблення"]
+    },
+    {
+      "id": 10, "name": "Дмитро Савченко", "categoryId": "movers", "city": "Гадяч",
+      "rating": 4.4, "reviews": 15, "experience": 4, "priceFrom": 280, "verified": false,
+      "bio": "Переїзди по місту та району: вантажники, пакування, винесення старих меблів.",
+      "skills": ["Переїзди", "Пакування", "Винесення меблів"]
+    },
+    {
+      "id": 11, "name": "Юрій Кузьменко", "categoryId": "electrician", "city": "Бутовичеське",
+      "rating": 4.6, "reviews": 14, "experience": 8, "priceFrom": 140, "verified": false,
+      "bio": "Електрик для приватних будинків і дач у селах навколо Гадяча. Виїжджаю в день звернення.",
+      "skills": ["Приватні будинки", "Освітлення", "Заземлення"]
+    },
+    {
+      "id": 12, "name": "Оксана Данильченко", "categoryId": "painter", "city": "Гадяч",
+      "rating": 4.9, "reviews": 33, "experience": 9, "priceFrom": 180, "verified": true,
+      "bio": "Штукатурка і шпаклівка під фарбування, обклеювання шпалерами. Дотримуюсь погодженого кошторису.",
+      "skills": ["Штукатурка", "Шпаклівка", "Шпалери"]
+    }
+  ],
+  "services": [
+    { "id": "el-socket", "categoryId": "electrician", "name": "Заміна розетки або вимикача", "unit": "шт", "price": 120, "minOrder": 150, "max": 50, "decimals": false },
+    { "id": "el-cable", "categoryId": "electrician", "name": "Прокладання кабелю", "unit": "м.п.", "price": 90, "minOrder": 300, "max": 500, "decimals": true },
+    { "id": "el-panel", "categoryId": "electrician", "name": "Монтаж електрощита", "unit": "шт", "price": 1800, "minOrder": 1800, "max": 5, "decimals": false },
+    { "id": "pl-mixer", "categoryId": "plumber", "name": "Заміна змішувача", "unit": "шт", "price": 450, "minOrder": 450, "max": 10, "decimals": false },
+    { "id": "pl-radiator", "categoryId": "plumber", "name": "Монтаж радіатора", "unit": "шт", "price": 700, "minOrder": 700, "max": 20, "decimals": false },
+    { "id": "pl-leak", "categoryId": "plumber", "name": "Усунення протікання", "unit": "год", "price": 350, "minOrder": 350, "max": 12, "decimals": true },
+    { "id": "ar-wallpaper", "categoryId": "apartmentRepair", "name": "Поклейка шпалер", "unit": "м²", "price": 110, "minOrder": 800, "max": 500, "decimals": true },
+    { "id": "ar-screed", "categoryId": "apartmentRepair", "name": "Стяжка підлоги", "unit": "м²", "price": 220, "minOrder": 2000, "max": 500, "decimals": true },
+    { "id": "ti-tile", "categoryId": "tiler", "name": "Укладання плитки", "unit": "м²", "price": 380, "minOrder": 1500, "max": 300, "decimals": true },
+    { "id": "pa-paint", "categoryId": "painter", "name": "Фарбування стін", "unit": "м²", "price": 90, "minOrder": 700, "max": 1000, "decimals": true },
+    { "id": "pa-plaster", "categoryId": "painter", "name": "Штукатурка стін", "unit": "м²", "price": 180, "minOrder": 1200, "max": 1000, "decimals": true },
+    { "id": "ca-wardrobe", "categoryId": "carpenter", "name": "Збирання шафи", "unit": "шт", "price": 900, "minOrder": 900, "max": 10, "decimals": false },
+    { "id": "ca-door", "categoryId": "carpenter", "name": "Монтаж міжкімнатних дверей", "unit": "шт", "price": 1200, "minOrder": 1200, "max": 20, "decimals": false },
+    { "id": "cl-repair", "categoryId": "cleaning", "name": "Прибирання після ремонту", "unit": "м²", "price": 60, "minOrder": 600, "max": 500, "decimals": true },
+    { "id": "cl-general", "categoryId": "cleaning", "name": "Генеральне прибирання", "unit": "м²", "price": 45, "minOrder": 500, "max": 500, "decimals": true },
+    { "id": "hm-hour", "categoryId": "handyman", "name": "Майстер на годину", "unit": "год", "price": 300, "minOrder": 300, "max": 24, "decimals": true },
+    { "id": "ap-washer", "categoryId": "appliances", "name": "Ремонт пральної машини", "unit": "шт", "price": 650, "minOrder": 650, "max": 5, "decimals": false },
+    { "id": "mv-hour", "categoryId": "movers", "name": "Вантажники", "unit": "год", "price": 280, "minOrder": 560, "max": 24, "decimals": true }
+  ],
+  "urgency": [
+    { "id": "standard", "name": "Стандартно (за домовленістю)", "multiplier": 1 },
+    { "id": "soon", "name": "Протягом 3 днів", "multiplier": 1.15 },
+    { "id": "urgent", "name": "Терміново (сьогодні)", "multiplier": 1.4 }
+  ],
+  "zones": [
+    { "id": "city", "name": "Гадяч (в межах міста)", "fee": 0 },
+    { "id": "near", "name": "Село до 10 км від Гадяча", "fee": 150 },
+    { "id": "far", "name": "Село 10–25 км від Гадяча", "fee": 300 }
+  ],
+  "materialsSurchargePercent": 15,
+  "reviews": [
+    { "id": 1, "masterId": 1, "author": "Марина К.", "rating": 5, "text": "Олег за годину замінив усі розетки в кімнаті й пояснив, що не так було з проводкою. Все чисто і без зайвих розмов." },
+    { "id": 2, "masterId": 4, "author": "Ігор П.", "rating": 5, "text": "Плитка у ванній лягла рівно, шви ідеальні. Майстер дотримався кошторису до гривні." },
+    { "id": 3, "masterId": 6, "author": "Світлана Д.", "rating": 5, "text": "Після ремонту квартира була в пилу. Наталія з помічницею привели її до ладу за півдня." },
+    { "id": 4, "masterId": 2, "author": "Віталій Н.", "rating": 4, "text": "Приїхав того ж дня, замінив змішувач. Єдине, що довелося докупляти прокладки, але майстер їх привіз." },
+    { "id": 5, "masterId": 12, "author": "Олена Т.", "rating": 5, "text": "Вирівняла стіни під фарбування. Попередньо назвала ціну, і підсумок збігся з нею." },
+    { "id": 6, "masterId": 8, "author": "Анатолій С.", "rating": 5, "text": "Пральна машина не віджимала. Сергій знайшов причину за 20 хвилин і відремонтував на місці." }
+  ]
+}
